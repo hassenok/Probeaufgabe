@@ -1,22 +1,22 @@
 package com.company;
-import Beans.*;
+import Classes.*;
 
 public class Main {
 
-    public static double calculate(HouseholdProduct p , double area){
-        return area * p.getPricePerMS();
+    public static double calculate(HouseholdProduct product , double area){
+        return area * product.getPricePerMS();
     }
 
 
     public static void main(String[] args) {
 
         Optimal optObjekt = new Optimal();
-        Kompact komObjekt = new Kompact();
+        Compact komObjekt = new Compact();
         //Variante1:
-        System.out.println("Der Preis bei 100 QM und optimale Paket liegt bei: "+optObjekt.calculateSum(100));
-        System.out.println("Der Preis bei 100 QM und kompakte Paket liegt bei: "+komObjekt.calculateSum(100));
+        System.out.println("Das optimale Paket für 100 QM kostet: "+optObjekt.calculateSum(100));
+        System.out.println("Das kompakte Paket für 100 QM kostet: "+komObjekt.calculateSum(100));
         //Variante2:
-        System.out.println("optimal: "+ calculate(optObjekt,100));
-        System.out.println("Kompact: "+ calculate(komObjekt,100));
+        System.out.println("Das optimale Paket für 100 QM kostet: "+ calculate(optObjekt,100));
+        System.out.println("Das kompakte Paket für 100 QM kostet: "+ calculate(komObjekt,100));
     }
 }

@@ -1,4 +1,4 @@
-package Beans;
+package Classes;
 
 public class Optimal extends HouseholdProduct {
 

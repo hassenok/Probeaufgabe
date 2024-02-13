@@ -1,11 +1,9 @@
-package Beans;
+package Classes;
 
 
 
 public class HouseholdProduct {
     private double pricePerMS;
-
-
 
     public HouseholdProduct(double pricePerMS) {
         this.pricePerMS = pricePerMS;
